@@ -12,6 +12,7 @@ jobs:
     steps:
       - checkout
       # update Go
+      - sudo apt-get clean
       - run: |
           go version
           go env GOROOT
